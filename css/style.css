@@ -1968,20 +1968,22 @@ blockquote {
 }
 
 .finale-mark {
-  min-height: 310px;
+  width: min(36vw, 420px);
+  aspect-ratio: 1;
+  justify-self: center;
   display: grid;
   place-items: center;
-  padding: 24px;
+  padding: 12px;
   overflow: visible;
+  filter: drop-shadow(0 30px 30px rgba(106, 74, 61, 0.13));
 }
 
 .finale-mark img {
-  width: min(24vw, 270px);
-  height: auto;
+  width: 100%;
+  max-height: min(48vh, 420px);
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: contain;
-  filter: drop-shadow(0 28px 32px rgba(106, 74, 61, 0.15));
 }
 
 .finale-copy h2 {
@@ -2459,13 +2461,13 @@ blockquote {
   }
 
   .finale-mark img {
-    width: 210px;
+    width: 100%;
     margin: auto;
   }
 
   .finale-mark {
-    min-height: auto;
-    padding: 0;
+    width: min(76vw, 320px);
+    padding: 6px;
   }
 
   .finale-copy blockquote {
