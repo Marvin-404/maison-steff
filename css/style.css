@@ -1968,14 +1968,19 @@ blockquote {
 }
 
 .finale-mark {
+  min-height: 310px;
   display: grid;
   place-items: center;
+  padding: 24px;
+  overflow: visible;
 }
 
 .finale-mark img {
-  width: min(27vw, 310px);
+  width: min(24vw, 270px);
+  height: auto;
+  aspect-ratio: 1;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   filter: drop-shadow(0 28px 32px rgba(106, 74, 61, 0.15));
 }
 
@@ -2456,6 +2461,11 @@ blockquote {
   .finale-mark img {
     width: 210px;
     margin: auto;
+  }
+
+  .finale-mark {
+    min-height: auto;
+    padding: 0;
   }
 
   .finale-copy blockquote {

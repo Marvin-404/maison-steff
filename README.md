@@ -98,7 +98,7 @@ La clase `.product-photo` ya controla el recorte, tamaño, bordes y efecto hover
 
 Los colores principales se encuentran al inicio de `css/style.css`, dentro de `:root`. Cambia esos valores para actualizar la paleta en todo el sitio.
 
-El logotipo oficial utilizado por la web está en `assets/maison-steff-logo.png`. El archivo original `assets/Maison Steff.png` se conserva sin modificaciones.
+El logotipo oficial utilizado por la web está en `assets/maison-steff-logo.png`.
 
 ## Instagram y QR
 
@@ -123,7 +123,7 @@ El proyecto está preparado para publicarse como sitio estático desde la rama `
 4. Elige la rama `main` y la carpeta `/ (root)`.
 5. Guarda la configuración.
 
-Los documentos administrativos y assets fuente no utilizados permanecen en la computadora, pero están excluidos mediante `.gitignore` para evitar publicarlos accidentalmente.
+La carpeta `assets` contiene únicamente las imágenes y códigos QR utilizados por la presentación.
 
 ## Funcionamiento sin internet
 
