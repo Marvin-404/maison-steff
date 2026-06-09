@@ -39,7 +39,7 @@ maison-steff-presentacion-web/
     pastel-fresa.jpg
     pastel-vainilla.jpg
     pastel-chocolate.jpg
-    pastel-tres-leches.jpg
+    pastel-mixto.jpg
     empaque-pasteles.jpg
     qr_instagram_maison_steff.png
     qr_sitio_web_maison_steff.png
