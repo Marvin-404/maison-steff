@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f8">
+  <meta name="description" content="Presentación escolar interactiva de la microempresa Maison Steff.">
+  <title>Maison Steff | Presentación</title>
+  <link rel="icon" href="assets/maison-steff-logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="progress-bar" aria-hidden="true"><span id="progress"></span></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand-link" href="#inicio" aria-label="Maison Steff, volver al inicio">
+      <img src="assets/maison-steff-logo.png" alt="" width="46" height="46">
+      <span><strong>Maison</strong><em>Steff</em></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación de la presentación">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#marca">Marca</a>
+      <a href="#producto">Producto</a>
+      <a href="#mercado">Mercado</a>
+      <a href="#marketing">Marketing</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#cierre">Cierre</a>
+    </nav>
+    <div class="slide-counter" aria-label="Sección actual">
+      <span id="currentSlide">01</span><span class="counter-line"></span><span id="totalSlides">08</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="slide hero" id="inicio" data-slide="1" aria-labelledby="inicio-title">
+      <div class="decor decor-one" aria-hidden="true">♡</div>
+      <div class="decor decor-two" aria-hidden="true">✦</div>
+      <div class="hero-copy" data-reveal>
+        <span class="eyebrow">Pastelería artesanal · Presentación escolar</span>
+        <h1 id="inicio-title"><span>Maison</span> <em>Steff</em></h1>
+        <p class="hero-lead">Pasteles artesanales individuales<br>para cada momento especial.</p>
+        <p class="hero-quote">“Cada pastel es una pequeña obra de dulzura hecha con amor para ti.”</p>
+        <button class="primary-button" type="button" data-go="marca">
+          Iniciar presentación <span aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <div class="hero-visual hero-logo-visual" data-reveal>
+        <div class="hero-halo"></div>
+        <div class="logo-stage">
+          <img class="hero-official-logo" src="assets/maison-steff-logo.png" alt="Logotipo oficial de Maison Steff">
+          <span class="stage-note note-one">fresco</span>
+          <span class="stage-note note-two">delicado</span>
+          <span class="stage-note note-three">especial</span>
+        </div>
+      </div>
+
+      <div class="hero-mini-grid" data-reveal>
+        <article><span>01</span><p>Porciones individuales</p></article>
+        <article><span>02</span><p>Ingredientes frescos</p></article>
+        <article><span>03</span><p>Detalles para regalar</p></article>
+      </div>
+      <a class="scroll-cue" href="#marca">Descubre la propuesta <span>↓</span></a>
+    </section>
+
+    <section class="slide" id="marca" data-slide="2" aria-labelledby="marca-title">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow">01 · Identidad de marca</span>
+        <h2 id="marca-title">Una marca dulce,<br><em>delicada y cercana.</em></h2>
+        <p>Maison Steff convierte un pequeño pastel en un detalle que se recuerda.</p>
+      </div>
+
+      <div class="brand-showcase">
+        <article class="logo-card featured-card" data-reveal>
+          <span class="card-kicker">Logotipo</span>
+          <img src="assets/maison-steff-logo.png" alt="Logotipo oficial de Maison Steff">
+          <p>Una identidad artesanal inspirada en la suavidad, el cariño y las celebraciones.</p>
+        </article>
+
+        <article class="identity-card" data-reveal>
+          <span class="card-kicker">Nombre del producto</span>
+          <h3>Pastel Individual<br>Artesanal</h3>
+          <div class="fine-line"></div>
+          <span class="card-kicker">Nombre de la marca</span>
+          <h3 class="script-name">Maison Steff</h3>
+        </article>
+
+        <article class="palette-card" data-reveal>
+          <span class="card-kicker">Colores institucionales</span>
+          <div class="swatches" aria-label="Paleta de colores">
+            <div><span style="--swatch:#F786C2"></span><small>#F786C2</small></div>
+            <div><span style="--swatch:#FFD7E1"></span><small>#FFD7E1</small></div>
+            <div><span style="--swatch:#FFF2F2"></span><small>#FFF2F2</small></div>
+            <div><span style="--swatch:#6A4A3D"></span><small>#6A4A3D</small></div>
+            <div><span style="--swatch:#D99CAB"></span><small>#D99CAB</small></div>
+          </div>
+          <div class="type-pair">
+            <div><strong>Maison</strong><small>Inspiración elegante</small></div>
+            <div><em>Steff</em><small>Inspiración manuscrita</small></div>
+          </div>
+          <p class="tiny-note">En esta versión local se usan tipografías seguras del sistema.</p>
+        </article>
+      </div>
+
+      <div class="section-footnote" data-reveal>
+        <span>La esencia</span>
+        <p>Artesanal en la elaboración. Elegante en la presentación. Cercana en la atención.</p>
+      </div>
+    </section>
+
+    <section class="slide slide-soft" id="producto" data-slide="3" aria-labelledby="producto-title">
+      <div class="section-heading compact" data-reveal>
+        <span class="eyebrow">02 · El producto</span>
+        <h2 id="producto-title">Pequeño en tamaño.<br><em>Grande en intención.</em></h2>
+        <p>Pasteles frescos, prácticos y listos para convertir cualquier momento en celebración.</p>
+      </div>
+
+      <div class="product-grid" data-reveal>
+        <article class="flavor-card strawberry">
+          <div class="product-photo-wrap">
+            <img class="product-photo" src="assets/pastel-fresa.jpg" alt="Pastel individual de fresa con relleno rojo">
+          </div>
+          <div class="flavor-number">01</div>
+          <h3>Fresa</h3>
+          <p>Suave, fresca y alegre, con detalles rosados.</p>
+          <small>Pastel artesanal individual, fresco y delicado.</small>
+        </article>
+        <article class="flavor-card vanilla">
+          <div class="product-photo-wrap">
+            <img class="product-photo" src="assets/pastel-vainilla.jpg" alt="Pastel artesanal de vainilla decorado con corazones">
+          </div>
+          <div class="flavor-number">02</div>
+          <h3>Vainilla</h3>
+          <p>Un sabor clásico con acabado elegante.</p>
+          <small>Pastel artesanal individual, fresco y delicado.</small>
+        </article>
+        <article class="flavor-card chocolate">
+          <div class="mini-cake" aria-hidden="true"><span></span><i></i></div>
+          <div class="flavor-number">03</div>
+          <h3>Chocolate</h3>
+          <p>Intenso, cremoso y perfecto para consentirse.</p>
+          <small>Pastel artesanal individual, fresco y delicado.</small>
+        </article>
+        <article class="flavor-card tres-leches">
+          <div class="product-photo-wrap">
+            <img class="product-photo" src="assets/pastel-tres-leches.jpg" alt="Pastel artesanal decorado con flores rosadas">
+          </div>
+          <div class="flavor-number">04</div>
+          <h3>Tres leches</h3>
+          <p>Húmedo, delicado y lleno de sabor.</p>
+          <small>Pastel artesanal individual, fresco y delicado.</small>
+        </article>
+      </div>
+
+      <div class="product-details">
+        <article class="detail-panel features-panel" data-reveal>
+          <span class="card-kicker">Características</span>
+          <ul class="heart-list">
+            <li>Elaboración artesanal</li>
+            <li>Ingredientes frescos y de calidad</li>
+            <li>Porciones individuales</li>
+            <li>Variedad de sabores</li>
+            <li>Presentación delicada</li>
+            <li>Hecho con amor</li>
+          </ul>
+        </article>
+
+        <article class="detail-panel package-panel" data-reveal>
+          <span class="card-kicker">Empaque final</span>
+          <figure class="package-photo-wrap">
+            <img src="assets/empaque-pasteles.jpg" alt="Presentación referencial de pasteles individuales en bandejas">
+            <figcaption>Presentación individual referencial</figcaption>
+          </figure>
+          <ul class="dot-list">
+            <li>Bandeja individual sin caja</li>
+            <li>Cinta rosa por fuera con moño</li>
+            <li>Sticker del logo encima</li>
+            <li>Presentación lista para regalar</li>
+          </ul>
+        </article>
+
+        <article class="detail-panel label-panel" data-reveal>
+          <span class="card-kicker">Etiqueta interior</span>
+          <div class="label-preview">
+            <img src="assets/maison-steff-logo.png" alt="Diseño oficial para sticker de Maison Steff">
+          </div>
+          <div class="label-fields" aria-label="Campos de la etiqueta interior">
+            <div><span>Sabor:</span><i></i></div>
+            <div><span>Fecha:</span><i></i></div>
+            <strong>Hecho con amor</strong>
+          </div>
+          <p>Se coloca dentro de la tapa para una presentación más limpia y elegante.</p>
+        </article>
+      </div>
+
+      <article class="development-strip" data-reveal>
+        <div>
+          <span class="eyebrow">Diseño y desarrollo</span>
+          <h3>Del concepto al primer bocado</h3>
+        </div>
+        <p>Selección de sabores, pruebas de receta, elección de ingredientes, definición del tamaño y diseño de decoración. El objetivo: superar las expectativas del cliente.</p>
+      </article>
+    </section>
+
+    <section class="slide" id="mercado" data-slide="4" aria-labelledby="mercado-title">
+      <div class="section-heading compact" data-reveal>
+        <span class="eyebrow">03 · Oportunidad de mercado</span>
+        <h2 id="mercado-title">Un antojo cotidiano.<br><em>Una oportunidad real.</em></h2>
+      </div>
+
+      <div class="opportunity-grid">
+        <article class="opportunity-card" data-reveal>
+          <span class="line-icon">01</span>
+          <h3>Necesidad</h3>
+          <p>Las personas buscan postres individuales, prácticos y atractivos para disfrutar, regalar o celebrar sin comprar un pastel grande.</p>
+        </article>
+        <article class="opportunity-card accented" data-reveal>
+          <span class="line-icon">02</span>
+          <h3>Oferta</h3>
+          <p>Maison Steff ofrece pasteles artesanales individuales con presentación delicada, ingredientes de calidad y sabores que enamoran.</p>
+        </article>
+        <article class="opportunity-card" data-reveal>
+          <span class="line-icon">03</span>
+          <h3>Demanda</h3>
+          <p>Los consumidores desean postres frescos, ricos y visualmente bonitos, adaptados a sus necesidades y antojos.</p>
+        </article>
+        <article class="opportunity-card" data-reveal>
+          <span class="line-icon">04</span>
+          <h3>Mercado</h3>
+          <p>Personas de todas las edades que disfrutan los dulces, buscan detalles especiales o apoyan emprendimientos locales.</p>
+        </article>
+      </div>
+
+      <div class="market-lower">
+        <article class="audience-panel" data-reveal>
+          <span class="card-kicker">Nuestros clientes</span>
+          <div class="audience-grid">
+            <div><span>♙</span><p>Estudiantes<br>y jóvenes</p></div>
+            <div><span>⌂</span><p>Familias</p></div>
+            <div><span>♡</span><p>Detalles<br>especiales</p></div>
+            <div><span>✦</span><p>Eventos y<br>celebraciones</p></div>
+          </div>
+        </article>
+        <article class="market-copy" data-reveal>
+          <div>
+            <span class="card-kicker">Tamaño del mercado</span>
+            <p>Es amplio: los postres se consumen diariamente y en ocasiones especiales. El inicio es local, con posibilidad de expansión.</p>
+          </div>
+          <div>
+            <span class="card-kicker">Estructura y competencia</span>
+            <p>Existe competencia monopolística. Maison Steff se diferencia de pastelerías y emprendimientos por su sabor, presentación, calidad artesanal y atención personalizada.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide slide-dark" id="marketing" data-slide="5" aria-labelledby="marketing-title">
+      <div class="section-heading compact light" data-reveal>
+        <span class="eyebrow">04 · Estrategia y crecimiento</span>
+        <h2 id="marketing-title">Hacer que el amor<br><em>también se note.</em></h2>
+        <p>Posicionar Maison Steff como una marca artesanal, dulce y confiable, reconocida por cada detalle.</p>
+      </div>
+
+      <div class="mix-grid" data-reveal>
+        <article>
+          <span class="mix-icon">P</span>
+          <small>01 · Producto</small>
+          <h3>Único y delicado</h3>
+          <p>Pasteles artesanales individuales con sabores únicos y presentación especial.</p>
+        </article>
+        <article>
+          <span class="mix-icon">$</span>
+          <small>02 · Precio</small>
+          <h3>Accesible y justo</h3>
+          <p>Acorde al tamaño, la calidad y los costos de producción.</p>
+        </article>
+        <article>
+          <span class="mix-icon">⌖</span>
+          <small>03 · Plaza</small>
+          <h3>Directo y cercano</h3>
+          <p>Venta directa, pedidos por redes sociales y entrega a domicilio.</p>
+        </article>
+        <article>
+          <span class="mix-icon">↗</span>
+          <small>04 · Promoción</small>
+          <h3>Visual y memorable</h3>
+          <p>Fotografías atractivas, promociones, redes y recomendaciones.</p>
+        </article>
+      </div>
+
+      <div class="distribution" data-reveal>
+        <div class="distribution-copy">
+          <span class="eyebrow">Canales de distribución</span>
+          <h3>Cerca del cliente,<br>desde el primer mensaje.</h3>
+        </div>
+        <div class="channel-list">
+          <div><span>@</span><p>Redes sociales</p></div>
+          <div><span>◌</span><p>Pedidos por WhatsApp</p></div>
+          <div><span>⌂</span><p>Entrega a domicilio</p></div>
+          <div><span>□</span><p>Ventas por encargo</p></div>
+        </div>
+      </div>
+
+      <div class="life-cycle" data-reveal>
+        <div class="cycle-heading">
+          <span class="eyebrow">Ciclo de vida del producto</span>
+          <p>Innovar mantiene viva la preferencia del cliente.</p>
+        </div>
+        <ol>
+          <li><span>01</span><strong>Introducción</strong><p>Lanzamiento y reconocimiento de marca.</p></li>
+          <li><span>02</span><strong>Crecimiento</strong><p>Aumento de ventas y preferencia.</p></li>
+          <li><span>03</span><strong>Madurez</strong><p>Posicionamiento y fidelización.</p></li>
+          <li><span>04</span><strong>Declive</strong><p>Disminución si no se mejora.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide admin-slide" id="empresa" data-slide="6" aria-labelledby="empresa-title">
+      <div class="section-heading compact" data-reveal>
+        <span class="eyebrow">05 · Estudio administrativo</span>
+        <h2 id="empresa-title">Crecer con propósito<br><em>y organización.</em></h2>
+        <p>Maison Steff combina creatividad artesanal con calidad, atención cercana y una visión clara de crecimiento local.</p>
+      </div>
+
+      <div class="admin-grid">
+        <article class="admin-card admin-featured" data-reveal>
+          <span class="admin-number">01</span>
+          <span class="card-kicker">Misión</span>
+          <h3>Una experiencia dulce y especial.</h3>
+          <p>Elaborar pasteles artesanales individuales con ingredientes de calidad, hechos con amor, creatividad y dedicación.</p>
+        </article>
+        <article class="admin-card" data-reveal>
+          <span class="admin-number">02</span>
+          <span class="card-kicker">Visión</span>
+          <h3>Ser una marca reconocida.</h3>
+          <p>Destacar por la calidad, creatividad y sabor, logrando la preferencia de los clientes y creciendo en el mercado local.</p>
+        </article>
+        <article class="admin-card" data-reveal>
+          <span class="admin-number">03</span>
+          <span class="card-kicker">Compromiso</span>
+          <h3>Calidad en cada detalle.</h3>
+          <p>Mantener productos frescos, altos estándares de higiene y una atención amable y personalizada.</p>
+        </article>
+      </div>
+
+      <div class="values-strip" data-reveal>
+        <div>
+          <span class="card-kicker">Valores de Maison Steff</span>
+          <h3>La receta detrás de la marca</h3>
+        </div>
+        <ul>
+          <li>Responsabilidad</li>
+          <li>Creatividad</li>
+          <li>Honestidad</li>
+          <li>Calidad</li>
+          <li>Compromiso</li>
+          <li>Higiene</li>
+          <li>Amabilidad</li>
+        </ul>
+      </div>
+
+      <div class="admin-strategy" data-reveal>
+        <span>Estrategia de crecimiento</span>
+        <p>Promoción en redes sociales, innovación constante en sabores y decoración, empaques atractivos y atención personalizada.</p>
+      </div>
+    </section>
+
+    <section class="slide" id="investigacion" data-slide="7" aria-labelledby="investigacion-title">
+      <div class="section-heading compact" data-reveal>
+        <span class="eyebrow">06 · Investigación y contacto</span>
+        <h2 id="investigacion-title">Escuchar, probar<br><em>y mejorar.</em></h2>
+        <p>La investigación ayuda a convertir una buena idea en un producto que el mercado realmente desea.</p>
+      </div>
+
+      <div class="research-flow" data-reveal>
+        <article>
+          <span class="research-number">01</span>
+          <div class="research-symbol">?</div>
+          <h3>Conocer</h3>
+          <p>Aplicar encuestas, entrevistas y observación directa.</p>
+        </article>
+        <article>
+          <span class="research-number">02</span>
+          <div class="research-symbol">⌕</div>
+          <h3>Analizar</h3>
+          <p>Observar competencia, tendencias y comentarios en redes.</p>
+        </article>
+        <article>
+          <span class="research-number">03</span>
+          <div class="research-symbol">✓</div>
+          <h3>Validar</h3>
+          <p>Escuchar sugerencias y evaluar sabores y presentaciones.</p>
+        </article>
+        <article>
+          <span class="research-number">04</span>
+          <div class="research-symbol">↗</div>
+          <h3>Mejorar</h3>
+          <p>Ajustar el producto antes de lanzarlo a mayor escala.</p>
+        </article>
+      </div>
+
+      <div class="research-bottom">
+        <article class="sources-card social-card" data-reveal>
+          <span class="card-kicker">Redes sociales y acceso</span>
+          <div class="social-access">
+            <a class="instagram-profile" href="https://www.instagram.com/maison_steff/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram oficial de Maison Steff">
+              <span class="instagram-mark" aria-hidden="true"><i></i></span>
+              <span>
+                <small>Instagram oficial</small>
+                <strong>@maison_steff</strong>
+                <em>Abrir perfil</em>
+              </span>
+            </a>
+            <div class="qr-placeholder" aria-label="Espacio reservado para el QR de Instagram">
+              <span class="qr-mini" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>
+                <strong>QR de Instagram</strong>
+                <small>Espacio listo para pegar el QR directo</small>
+              </span>
+            </div>
+            <div class="qr-placeholder" aria-label="Espacio reservado para el QR del sitio web">
+              <span class="qr-mini" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>
+                <strong>QR del sitio web</strong>
+                <small>Pendiente al publicar en GitHub Pages</small>
+              </span>
+            </div>
+          </div>
+          <div class="source-tags" aria-label="Fuentes de información">
+            <span>Encuestas</span>
+            <span>Entrevistas</span>
+            <span>Observación directa</span>
+            <span>Redes y comentarios</span>
+          </div>
+        </article>
+        <article class="test-card" data-reveal>
+          <div class="test-icon">♥</div>
+          <div>
+            <span class="card-kicker">Prueba de mercado</span>
+            <h3>Degustar para decidir</h3>
+            <p>Realizar encuestas y degustaciones permite conocer los sabores favoritos, medir la aceptación y mejorar antes de crecer.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide finale" id="cierre" data-slide="8" aria-labelledby="cierre-title">
+      <div class="finale-mark" data-reveal>
+        <img src="assets/maison-steff-logo.png" alt="Logotipo oficial de Maison Steff" width="190" height="190">
+      </div>
+      <div class="finale-copy" data-reveal>
+        <span class="eyebrow">Maison Steff · Presentación final</span>
+        <h2 id="cierre-title">Una pequeña obra<br>de <em>dulzura.</em></h2>
+        <p>Pasteles artesanales individuales creados para celebrar, regalar y disfrutar con una presentación que transmite amor.</p>
+        <blockquote>“En Maison Steff, cada pastel es una pequeña obra de dulzura hecha con amor para ti.”</blockquote>
+        <button class="secondary-button" type="button" data-go="inicio">Volver al inicio <span>↑</span></button>
+      </div>
+      <div class="finale-points" data-reveal>
+        <div><span>01</span><p>Artesanal</p></div>
+        <div><span>02</span><p>Delicado</p></div>
+        <div><span>03</span><p>Memorable</p></div>
+      </div>
+      <footer>
+        <p>Maison Steff · Pastel Individual Artesanal</p>
+        <p>Hecho con amor ♥</p>
+      </footer>
+    </section>
+  </main>
+
+  <aside class="presentation-controls" aria-label="Controles de presentación">
+    <button id="prevSection" type="button" aria-label="Sección anterior" title="Sección anterior (flecha izquierda)">←</button>
+    <button id="topButton" type="button" aria-label="Volver arriba" title="Volver al inicio (Home)">↑</button>
+    <button id="nextSection" type="button" aria-label="Siguiente sección" title="Siguiente sección (flecha derecha)">→</button>
+  </aside>
+
+  <div class="keyboard-hint" id="keyboardHint">
+    <span>←</span><span>→</span> Usa las flechas para presentar
+    <button type="button" aria-label="Cerrar ayuda">×</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
