@@ -139,7 +139,7 @@ blockquote {
   padding: 9px 10px;
   border-radius: 10px;
   color: #8c6c65;
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.035em;
   text-decoration: none;
@@ -909,14 +909,14 @@ blockquote {
   min-height: 42px;
   margin-bottom: 11px;
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.79rem;
   line-height: 1.45;
 }
 
 .flavor-card small {
   color: var(--pink-dark);
-  font-size: 0.56rem;
-  line-height: 1.45;
+  font-size: 0.64rem;
+  line-height: 1.5;
 }
 
 .product-details {
@@ -949,7 +949,7 @@ blockquote {
 .heart-list li {
   position: relative;
   padding-left: 17px;
-  font-size: 0.67rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
@@ -1101,7 +1101,7 @@ blockquote {
   margin-bottom: 8px;
   padding-left: 13px;
   color: var(--muted);
-  font-size: 0.64rem;
+  font-size: 0.72rem;
 }
 
 .dot-list li::before {
@@ -1285,7 +1285,7 @@ blockquote {
 .opportunity-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.69rem;
+  font-size: 0.77rem;
 }
 
 .opportunity-card.accented p {
@@ -1336,7 +1336,7 @@ blockquote {
 
 .audience-grid p {
   margin: 0;
-  font-size: 0.63rem;
+  font-size: 0.7rem;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -1356,7 +1356,7 @@ blockquote {
 .market-copy p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.65rem;
+  font-size: 0.73rem;
 }
 
 /* Marketing */
@@ -1436,7 +1436,7 @@ blockquote {
 .mix-grid p {
   margin: 0;
   color: #cdb9bc;
-  font-size: 0.65rem;
+  font-size: 0.73rem;
 }
 
 .distribution {
@@ -1485,7 +1485,7 @@ blockquote {
 
 .channel-list p {
   margin: 0;
-  font-size: 0.58rem;
+  font-size: 0.67rem;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -1564,8 +1564,8 @@ blockquote {
 .life-cycle li p {
   margin: 0;
   color: #cdb9bc;
-  font-size: 0.52rem;
-  line-height: 1.35;
+  font-size: 0.61rem;
+  line-height: 1.42;
 }
 
 /* Administrative study */
@@ -1754,7 +1754,7 @@ blockquote {
 .research-flow p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.65rem;
+  font-size: 0.74rem;
 }
 
 .research-bottom {
@@ -1784,7 +1784,7 @@ blockquote {
   border-radius: 50px;
   background: #fff;
   color: var(--brown);
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
 }
 
@@ -1800,7 +1800,7 @@ blockquote {
 }
 
 .instagram-profile,
-.qr-placeholder {
+.qr-card {
   min-height: 108px;
   display: flex;
   align-items: center;
@@ -1818,33 +1818,34 @@ blockquote {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.instagram-profile:hover {
+.instagram-profile:hover,
+.qr-card:hover {
   box-shadow: 0 12px 28px rgba(106, 74, 61, 0.1);
   transform: translateY(-3px);
 }
 
 .instagram-profile > span:last-child,
-.qr-placeholder > span:last-child {
+.qr-card > span:last-child {
   display: flex;
   min-width: 0;
   flex-direction: column;
 }
 
 .instagram-profile small,
-.qr-placeholder small {
+.qr-card small {
   color: var(--muted);
-  font-size: 0.47rem;
+  font-size: 0.58rem;
   line-height: 1.35;
 }
 
 .instagram-profile strong,
-.qr-placeholder strong {
-  font: 400 0.92rem/1.4 var(--serif);
+.qr-card strong {
+  font: 400 1rem/1.4 var(--serif);
 }
 
 .instagram-profile em {
   color: var(--pink-dark);
-  font-size: 0.5rem;
+  font-size: 0.58rem;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -1890,30 +1891,19 @@ blockquote {
   background: #fff;
 }
 
-.qr-mini {
-  position: relative;
-  width: 50px;
-  height: 50px;
+.qr-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.qr-card img {
+  width: 76px;
+  height: 76px;
   flex: 0 0 auto;
-  border: 7px solid #fff;
+  border: 5px solid #fff;
+  border-radius: 10px;
   outline: 1px solid var(--blush);
-  background:
-    linear-gradient(90deg, var(--brown) 25%, transparent 25% 50%, var(--brown) 50% 75%, transparent 75%),
-    linear-gradient(var(--brown) 25%, transparent 25% 50%, var(--brown) 50% 75%, transparent 75%);
-  background-size: 12px 12px;
+  object-fit: contain;
 }
-
-.qr-mini i {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  border: 3px solid var(--pink-dark);
-  background: #fff;
-}
-
-.qr-mini i:nth-child(1) { top: -4px; left: -4px; }
-.qr-mini i:nth-child(2) { top: -4px; right: -4px; }
-.qr-mini i:nth-child(3) { bottom: -4px; left: -4px; }
 
 .test-card {
   display: grid;
@@ -2189,7 +2179,7 @@ blockquote {
 
   .main-nav a {
     padding-inline: 7px;
-    font-size: 0.62rem;
+    font-size: 0.66rem;
   }
 
   .hero {

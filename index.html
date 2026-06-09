@@ -119,7 +119,7 @@
         <p>Pasteles frescos, prácticos y listos para convertir cualquier momento en celebración.</p>
       </div>
 
-      <div class="product-grid" data-reveal>
+      <div class="product-grid" id="sabores" data-reveal>
         <article class="flavor-card strawberry">
           <div class="product-photo-wrap">
             <img class="product-photo" src="assets/pastel-fresa.jpg" alt="Pastel individual de fresa con relleno rojo">
@@ -138,8 +138,10 @@
           <p>Un sabor clásico con acabado elegante.</p>
           <small>Pastel artesanal individual, fresco y delicado.</small>
         </article>
-        <article class="flavor-card chocolate">
-          <div class="mini-cake" aria-hidden="true"><span></span><i></i></div>
+        <article class="flavor-card chocolate" id="pastel-chocolate">
+          <div class="product-photo-wrap">
+            <img class="product-photo" src="assets/pastel-chocolate.jpg" alt="Pastel individual de chocolate decorado con detalles de cumpleaños">
+          </div>
           <div class="flavor-number">03</div>
           <h3>Chocolate</h3>
           <p>Intenso, cremoso y perfecto para consentirse.</p>
@@ -406,7 +408,7 @@
       <div class="research-bottom">
         <article class="sources-card social-card" data-reveal>
           <span class="card-kicker">Redes sociales y acceso</span>
-          <div class="social-access">
+          <div class="social-access" id="redes-sociales">
             <a class="instagram-profile" href="https://www.instagram.com/maison_steff/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram oficial de Maison Steff">
               <span class="instagram-mark" aria-hidden="true"><i></i></span>
               <span>
@@ -415,26 +417,20 @@
                 <em>Abrir perfil</em>
               </span>
             </a>
-            <div class="qr-placeholder" aria-label="Espacio reservado para el QR de Instagram">
-              <span class="qr-mini" aria-hidden="true"><i></i><i></i><i></i></span>
+            <a class="qr-card" href="https://www.instagram.com/maison_steff/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Maison Steff">
+              <img src="assets/qr_instagram_maison_steff.png" alt="Código QR para visitar el Instagram de Maison Steff">
               <span>
                 <strong>QR de Instagram</strong>
-                <small>Espacio listo para pegar el QR directo</small>
+                <small>Escanea para visitar @maison_steff</small>
               </span>
-            </div>
-            <div class="qr-placeholder" aria-label="Espacio reservado para el QR del sitio web">
-              <span class="qr-mini" aria-hidden="true"><i></i><i></i><i></i></span>
+            </a>
+            <a class="qr-card" href="https://marvin-404.github.io/maison-steff/" target="_blank" rel="noopener noreferrer" aria-label="Abrir presentación web de Maison Steff">
+              <img src="assets/qr_sitio_web_maison_steff.png" alt="Código QR para abrir la presentación web de Maison Steff">
               <span>
                 <strong>QR del sitio web</strong>
-                <small>Pendiente al publicar en GitHub Pages</small>
+                <small>Escanea para abrir la presentación web</small>
               </span>
-            </div>
-          </div>
-          <div class="source-tags" aria-label="Fuentes de información">
-            <span>Encuestas</span>
-            <span>Entrevistas</span>
-            <span>Observación directa</span>
-            <span>Redes y comentarios</span>
+            </a>
           </div>
         </article>
         <article class="test-card" data-reveal>

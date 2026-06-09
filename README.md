@@ -2,6 +2,12 @@
 
 Presentación escolar interactiva y completamente local para la microempresa **Maison Steff**. Fue creada con HTML5, CSS3 y JavaScript puro; no necesita internet, instalaciones, frameworks ni librerías externas.
 
+## Enlaces del proyecto
+
+- Repositorio: `https://github.com/Marvin-404/maison-steff`
+- GitHub Pages: `https://marvin-404.github.io/maison-steff/`
+- Instagram: `https://www.instagram.com/maison_steff/`
+
 ## Cómo abrir el proyecto
 
 1. Abre la carpeta `maison-steff-presentacion-web` (o esta carpeta del proyecto).
@@ -32,8 +38,11 @@ maison-steff-presentacion-web/
     maison-steff-logo.png
     pastel-fresa.jpg
     pastel-vainilla.jpg
+    pastel-chocolate.jpg
     pastel-tres-leches.jpg
     empaque-pasteles.jpg
+    qr_instagram_maison_steff.png
+    qr_sitio_web_maison_steff.png
   README.md
 ```
 
@@ -67,36 +76,23 @@ Después puedes insertarlas en `index.html` con:
 <img src="assets/pastel-fresa.jpg" alt="Pastel individual de fresa">
 ```
 
-## Cómo reemplazar las ilustraciones de sabores
+## Cómo cambiar fotos de productos
 
-Las tarjetas de Fresa, Vainilla y Tres leches usan fotografías locales. Chocolate conserva una ilustración CSS como respaldo porque no hay una fotografía claramente identificada para ese sabor.
+Las cuatro tarjetas de sabores usan fotografías locales guardadas en `assets/`.
 
-Para reemplazar una ilustración:
+Para cambiar una fotografía:
 
 1. Abre `index.html`.
 2. Busca la tarjeta del sabor, por ejemplo `class="flavor-card strawberry"`.
-3. Reemplaza este bloque:
+3. Cambia la ruta `src` y el texto alternativo `alt`:
 
 ```html
-<div class="mini-cake" aria-hidden="true"><span></span><i></i></div>
+<div class="product-photo-wrap">
+  <img class="product-photo" src="assets/pastel-fresa.jpg" alt="Pastel individual de fresa">
+</div>
 ```
 
-por:
-
-```html
-<img class="product-photo" src="assets/pastel-fresa.jpg" alt="Pastel individual de fresa">
-```
-
-4. Agrega este estilo al final de `css/style.css`:
-
-```css
-.product-photo {
-  width: calc(100% + 40px);
-  height: 170px;
-  margin: -14px -20px 20px;
-  object-fit: cover;
-}
-```
+La clase `.product-photo` ya controla el recorte, tamaño, bordes y efecto hover.
 
 ## Personalización visual
 
@@ -110,17 +106,22 @@ La tarjeta de Instagram enlaza al perfil oficial:
 
 `https://www.instagram.com/maison_steff/`
 
-Los espacios para el QR de Instagram y el QR del sitio web están preparados dentro de la sección **Investigación y contacto**. El QR del sitio se reemplazará por el definitivo cuando la web se publique en GitHub Pages.
+La sección **Investigación y contacto** muestra dos códigos QR locales:
 
-## Publicación futura en GitHub Pages
+- `assets/qr_instagram_maison_steff.png`: abre el Instagram oficial.
+- `assets/qr_sitio_web_maison_steff.png`: abre la presentación publicada en GitHub Pages.
 
-El proyecto está preparado para publicarse como sitio estático. El último paso queda pendiente hasta tener acceso a la cuenta o repositorio de GitHub:
+Para reemplazar un QR, conserva el mismo nombre de archivo o actualiza su ruta en `index.html`.
 
-1. Crear o conectar el repositorio.
-2. Subir los archivos.
-3. Activar GitHub Pages desde la rama principal.
-4. Generar el QR de la URL publicada.
-5. Sustituir el espacio reservado del QR.
+## Publicación en GitHub Pages
+
+El proyecto está preparado para publicarse como sitio estático desde la rama `main`:
+
+1. Abre la configuración del repositorio.
+2. Entra en **Pages**.
+3. Selecciona **Deploy from a branch**.
+4. Elige la rama `main` y la carpeta `/ (root)`.
+5. Guarda la configuración.
 
 Los documentos administrativos y assets fuente no utilizados permanecen en la computadora, pero están excluidos mediante `.gitignore` para evitar publicarlos accidentalmente.
 
